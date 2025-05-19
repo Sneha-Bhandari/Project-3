@@ -36,7 +36,6 @@ const OurWorks = () => {
               alt=""
               className="w-full h-96 object-cover transform transition-transform duration-700 group-hover:scale-125"
             />
-            <div className="absolute inset-0  bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-500"></div>
             
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-all duration-900 ease-in-out transform translate-y-4 group-hover:translate-y-0">
               <div className="text-2xl font-semibold">{details[i]?.title}</div>

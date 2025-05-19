@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Component/Footer/Footer1";
 import MainNav from "../Component/Navigation/MainNav";
 
-import backgroundImage from "../assets/Laptop.jpeg";
+import backgroundImage from "../assets/hero1.jpg";
 
 const Layout = () => {
   return (

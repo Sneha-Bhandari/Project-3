@@ -6,6 +6,10 @@ import Strategy from '../Component/PageComponent/Home/Strategy'
 import Testimonial from '../Component/PageComponent/Home/Testimonial'
 import OurService from '../Component/PageComponent/Home/OurService'
 import AboutUs from '../Component/PageComponent/Home/AboutUs'
+import OurTeam from '../Component/PageComponent/Home/OurTeam'
+import Blog from '../Component/PageComponent/Home/Blog'
+import ContactUs from '../Component/PageComponent/Home/ContactUs'
+import LetsGetStarted from '../Component/PageComponent/Home/LetsGetStarted'
 
 const Home = () => {
   return (
@@ -18,6 +22,10 @@ const Home = () => {
       <Testimonial/>
       <OurService/>
       <AboutUs/>
+      <OurTeam/>
+      <Blog/>
+      <ContactUs/>
+      <LetsGetStarted/>
     </div>
   )
 }

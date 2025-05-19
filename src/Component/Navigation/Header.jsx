@@ -13,7 +13,7 @@ const Headitem= [
 ]
 const Header = () => {
   return (
-    <div className=" absolute bg-white z-50 left-0 right-0 top-9  h-fit px-32 py-6 border-1">
+    <div className=" absolute bg-white z-50 left-0 right-0 top-9  h-fit px-32 py-6 ">
     <div className="flex  items-center justify-between">
       <div className="text-4xl font-medium font-poppins">Create.</div>
       <div className="flex font-thin gap-12">

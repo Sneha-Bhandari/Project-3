@@ -4,30 +4,30 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 const Forms = [
   {
-    name: "firstName",
+    name: "FirstName",
     type: "text",
     placeholder: "",
   },
   
     {
-      name: "lastName",
+      name: "LastName",
       type: "text",
       placeholder: "",
     },
     
   {
-    name: "email",
+    name: "Email",
     type: "email",
     placeholder: "",
   },
   
     {
-      name: "subject",
+      name: "Subject",
       type: "text",
       placeholder: "",
     },
     {
-      name:"message",
+      name:"Message",
       type:"textarea",
       placeholder:"Write your notes or question here..."
     }
@@ -35,14 +35,14 @@ const Forms = [
 ];
 
 const Schemas = yup.object().shape({
-  firstName: yup.string().required("firstname is required!!"),
-  lastName: yup.string().required("lastname is required!!"),
+  FirstName: yup.string().required("firstname is required!!"),
+  LastName: yup.string().required("lastname is required!!"),
  
-  subject: yup.string().required("Subject is required!!"),
-  message: yup.string().required("message is required!!"),
+  Subject: yup.string().required("Subject is required!!"),
+  Message: yup.string().required("message is required!!"),
 
 
-  email: yup
+  Email: yup
     .string()
     .email("please provide a valid  email")
     .required("please enter your email"),
@@ -52,20 +52,20 @@ const Schemas = yup.object().shape({
 
 const ContactUs = () => {
   return (
-    <div className='bg-gray-50 relative h-lvh w-full'>
+    <div className='bg-gray-50 relative h-full w-full'>
       <div className='flex flex-col gap-8 mx-auto items-center justify-center py-20 h-full w-full  bg-gray-100 '>
        <h1 className='text-5xl font-poppins mb-12' >Contact Us</h1>
-        <div className='w-full h-full  flex justify-center items-start mx-auto  gap-12 px-20'>
-          <div className=' w-9/12 h-fit flex flex-col p-8 gap-4 bg-white'>
+        <div className='w-full h-full  flex justify-center items-start mx-auto   gap-12 px-20'>
+          <div className=' w-9/12 h-fit flex flex-col p-8 gap-4  bg-white'>
             <h1 className='font-poppins text-2xl'>Contact Form</h1>
             <Formik
           className=""
-          initimessalValues={{
-            firstName: "",
-            lastName:"",           
-            email: "",
-            subject:"",
-            message:"" 
+          initialValues={{
+            FirstName: "",
+            LastName:"",           
+            Email: "",
+            Subject:"",
+            Message:"" 
           }}
           validationSchema={Schemas}
           onSubmit={(values) => {
@@ -74,16 +74,19 @@ const ContactUs = () => {
         >
          {({setFieldValue,values})=>{
           return(
-            <Form className=" bg-gray-200  flex  flex-col ">
+            <Form className="   gap-4 p-2 flex  flex-col ">
             
             {Forms.map((val, i) => {
               return (
-                <div key={i} className="flex flex-col ">
+                <div key={i} className="flex flex-col font-poppins text-base font-light gap-1  ">
                   {val.name}
                   <Field
-                    className="border-1 "
+                  as={val.type === "textarea" ? "textarea" : "input"}
+                  className={`w-full border border-gray-300 rounded-3xl p-4 focus:outline-none focus:ring-2 focus:ring-teal-300 ${
+                    val.type === "textarea" ? "min-h-[150px]" : ""
+                  }`}
                     name={val.name}
-                    type={val.type}
+                    type={val.type !== "textarea" ? val.type : undefined}
                     placeholder={val.placeholder}
                   />
                   <ErrorMessage
@@ -94,12 +97,12 @@ const ContactUs = () => {
                 </div>
               );
             })}
-            <div className="flex items-center justify-center mx-2 my-2">
+            <div className="flex items-center  mx-2 my-2">
               <button
-                className=" "
+                className="text-white uppercase  bg-teal-300 font-light text-xs rounded-3xl p-4 cursor-pointer"
                 type="submit"
               >
-                Submit
+                Send Message
               </button>
             </div>
           </Form>

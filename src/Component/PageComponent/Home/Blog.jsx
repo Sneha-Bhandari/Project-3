@@ -1,11 +1,10 @@
 import React from "react";
-import leafImg from "../../../assets/leaf.jpg";
-import fourImg from "../../../assets/4.jpg";
-import laptopImg from "../../../assets/Laptop.jpeg";
+import imge1 from "../../../assets/img1.jpg"
+import imge2 from  "../../../assets/img2.jpg"
 
 const blogdetails = [
   {
-    image: leafImg,
+    image: imge1,
     title: "Create Beautiful Website In Less Than An Hour",
     details: [{ name: "Ham Brook", date: " Jan 18, 2019", type: " News" }],
     description:
@@ -14,7 +13,7 @@ const blogdetails = [
   },
 
   {
-    image: fourImg,
+    image: imge2,
     title: "Create Beautiful Website In Less Than An Hour",
     details: [{ name: "James Phelps", date: " Jan 18, 2019", type: " News" }],
     description:
@@ -23,7 +22,7 @@ const blogdetails = [
   },
 
   {
-    image: laptopImg,
+    image: imge1,
     title: "Create Beautiful Website In Less Than An Hour",
     details: [{ name: "James Phelps", date: " Jan 18, 2019", type: " News" }],
     description:

@@ -1,5 +1,7 @@
 import React from 'react'
 import person1 from "../../../assets/per1.jpg"
+import person2 from "../../../assets/per2.jpg"
+import person3 from "../../../assets/person2.jpg"
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -10,8 +12,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const teamdetails=[
   {image:person1,name:"John Rooster",position:"Co-Founder, President", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",logos:[<FaFacebookF/>,<FaTwitter/>,<FaInstagram/>,<FaLinkedinIn/>]},
-  {image:person1,name:"Tom Sharp",position:"Co-Founder, COO", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",logos:[<FaFacebookF/>,<FaTwitter/>,<FaInstagram/>,<FaLinkedinIn/>]},
-  {image:person1,name:"Winston Hodson",position:"Marketing", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",logos:[<FaFacebookF/>,<FaTwitter/>,<FaInstagram/>,<FaLinkedinIn/>]}
+  {image:person2,name:"Tom Sharp",position:"Co-Founder, COO", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",logos:[<FaFacebookF/>,<FaTwitter/>,<FaInstagram/>,<FaLinkedinIn/>]},
+  {image:person3,name:"Winston Hodson",position:"Marketing", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",logos:[<FaFacebookF/>,<FaTwitter/>,<FaInstagram/>,<FaLinkedinIn/>]}
 ]
 
 

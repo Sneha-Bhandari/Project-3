@@ -27,7 +27,7 @@ const serviceData = [
 
 const Innovate = () => {
   return (
-    <div className="h-screen w-full relative  bg-white py-20">
+    <div className="h-full w-full relative  bg-white py-20">
       <div className="flex gap-24 mx-32 mt-12 items-center justify-between text-start ">
         {serviceData.map((service, i) => {
           return (

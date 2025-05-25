@@ -83,7 +83,7 @@ const ContactUs = () => {
                   <Field
 
                   as={val.type === "textarea" ? "textarea" : "input"}
-                  className={`w-full border border-gray-300 rounded-3xl p-4 focus:outline-none focus:ring-2 focus:ring-teal-300 ${
+                  className={`w-full border border-gray-300 rounded-3xl p-2 focus:outline-none focus:ring-2 focus:ring-teal-300 ${
                     val.type === "textarea" ? "min-h-[150px]" : "" 
                   }`  
                  }

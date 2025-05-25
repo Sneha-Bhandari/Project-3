@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="w-full h-screen  md:overflow-hidden">
       
-      <div className="relative flex flex-col gap-5 items-center mx-auto top-1/3 text-white text-center z-10 ">
+      <div className="relative flex flex-col gap-5 items-center mx-auto top-1/2 text-white text-center z-10 ">
         <div className="text-2xl md:text-5xl font-medium tracking-wide font-sans  flex gap-2">
           <span>We Love To Build</span>
           <span className="">

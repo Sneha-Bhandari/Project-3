@@ -1,11 +1,11 @@
 import React from "react";
-import Subheader from "./Subheader";
 import Header from "./Header";
+import Subheader from "./Subheader";
 
 const MainNav = () => {
   return (
     <div className="">
-      <Subheader />
+      <Subheader/>
       <Header />
     </div>
   );

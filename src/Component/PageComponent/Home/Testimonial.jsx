@@ -46,7 +46,7 @@ const responsive = {
 
 const Testimonials = () => {
   return (
-    <div className="h-lvh w-full relative bg-white mx-auto ">
+    <div className="h-lvh w-full  bg-white mx-auto ">
       <div className="flex flex-col items-center  h-fit justify-center ">
       <div className="font-poppins text-5xl">Testimonials</div>
      

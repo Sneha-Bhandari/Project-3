@@ -33,7 +33,7 @@ const blogdetails = [
 
 const Blog = () => {
   return (
-    <div className="bg-white relative w-full h-full py-24 border-t-1 border-gray-200 ">
+    <div className="bg-white w-full h-full py-24 border-t-1 border-gray-200 ">
       <div className="flex flex-col gap-10 justify-center w-9/10 mx-auto items-center py-6">
         <h1 className="text-5xl tracking-wider font-serif">Blog</h1>
         <div className="flex gap-8 ">

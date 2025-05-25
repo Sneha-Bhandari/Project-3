@@ -13,7 +13,7 @@ import LetsGetStarted from '../Component/PageComponent/Home/LetsGetStarted'
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
      
       <Banner/>
       <Innovate/>

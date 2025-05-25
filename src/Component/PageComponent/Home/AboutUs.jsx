@@ -10,7 +10,7 @@ const aboutdetails=[
 ]
 const AboutUs = () => {
   return (
-    <div className='bg-white relative h-lvh w-full flex '>
+    <div className='bg-white  h-lvh w-full flex '>
       <div className='flex mx-auto  pt-12 h-full justify-center items-center'>
 
       <div className='w-full h-full  flex flex-col gap-8 justify-start p-16 '>

@@ -40,9 +40,9 @@ const detailing = [
 ];
 const Strategy = () => {
   return (
-    <div className="bg-white h-screen w-full relative flex ">
+    <div className="bg-white h-screen w-full  flex ">
       <div className="flex bg-black items-center justify-center mx-10 my-auto w-full  h-2/3  ">
-        <div className="text-white  w-9/12 p-8  h-full">
+        <div className="text-white   w-9/12 p-8  h-full">
           <img
             className="w-auto h-full object-cover"
             src={images}

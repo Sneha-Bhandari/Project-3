@@ -16,7 +16,7 @@ const details = [
 
 const OurWorks = () => {
   return (
-    <div className="bg-white relative w-full h-full">
+    <div className="bg-white  w-full h-full">
       <div className="flex flex-col gap-10 justify-center items-center py-6">
         <h1 className="text-5xl tracking-wider font-serif">Our Works</h1>
         <p className="w-1/2 text-center font-sans text-gray-700 font-light tracking-wide">

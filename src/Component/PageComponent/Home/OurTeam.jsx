@@ -19,7 +19,7 @@ const teamdetails=[
 
 const OurTeam = () => {
   return (
-    <div className='h-lvh w-full bg-white relative '>
+    <div className='h-lvh w-full bg-white  '>
       <div className='flex flex-col gap-8 justify-center items-center  w-9/10 h-full mx-auto'>
         <h1 className='text-5xl font-poppins'>Our Team</h1>
         

@@ -52,7 +52,7 @@ const Schemas = yup.object().shape({
 
 const ContactUs = () => {
   return (
-    <div className='bg-gray-50 relative h-full w-full'>
+    <div className='bg-gray-50  h-full w-full'>
       <div className='flex flex-col gap-8 mx-auto items-center justify-center py-20 h-full w-full  bg-gray-100 '>
        <h1 className='text-5xl font-poppins mb-12' >Contact Us</h1>
         <div className='w-full h-full  flex justify-center items-start mx-auto   gap-12 px-20'>
@@ -81,10 +81,12 @@ const ContactUs = () => {
                 <div key={i} className="flex flex-col font-poppins text-base font-light gap-1  ">
                   {val.name}
                   <Field
+
                   as={val.type === "textarea" ? "textarea" : "input"}
                   className={`w-full border border-gray-300 rounded-3xl p-4 focus:outline-none focus:ring-2 focus:ring-teal-300 ${
-                    val.type === "textarea" ? "min-h-[150px]" : ""
-                  }`}
+                    val.type === "textarea" ? "min-h-[150px]" : "" 
+                  }`  
+                 }
                     name={val.name}
                     type={val.type !== "textarea" ? val.type : undefined}
                     placeholder={val.placeholder}

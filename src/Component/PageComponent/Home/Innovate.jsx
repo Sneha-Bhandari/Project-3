@@ -27,8 +27,8 @@ const serviceData = [
 
 const Innovate = () => {
   return (
-    <div className="h-full w-full relative  bg-white py-20">
-      <div className="flex gap-24 mx-32 mt-12 items-center justify-between text-start ">
+    <div className="h-full w-full  bg-white py-20">
+      <div className=" md:flex gap-24 md:mx-32 mx-12 mt-12 md:items-center md:justify-between md:text-start ">
         {serviceData.map((service, i) => {
           return (
             <div key={i} className="   relative">

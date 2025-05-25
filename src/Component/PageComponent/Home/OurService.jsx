@@ -50,7 +50,7 @@ const servicedetail = [
 
 const OurService = () => {
   return (
-    <div className="bg-white w-full h-screen relative py-16 px-8 border-b-1 border-gray-300 ">
+    <div className="bg-white w-full h-screen py-16 px-8 border-b-1 border-gray-300 ">
       <div className="text-center mb-12">
         <h2 className="text-5xl font-medium tracking-wide font-poppins mb-2">Our Services</h2>
       </div>

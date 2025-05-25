@@ -9,14 +9,14 @@ import backgroundImage from "../assets/hero1.jpg";
 const Layout = () => {
   return (
     <div>
-      <div>
+    
       <img
-        className="fixed w-full h-full object-cover"
+        className="fixed w-full h-full md:object-cover object-cover opacity-90 -z-50 top-0 buttom-0"
         src={backgroundImage}
         alt="Laptop background"
       />
         <MainNav />
-      </div>
+     
       <div>
         <Outlet />
       </div>

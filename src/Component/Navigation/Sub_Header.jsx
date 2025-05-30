@@ -6,8 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Subheader = () => {
   return (
-    <div className='flex relative top-0 gap-12 items-center justify-between px-3 md:px-32 py-2 bg-gray-700'>
-        <div className='flex gap-5  text-white  '>
+    <div className='flex  gap-12 items-center justify-between  px-3 md:px-32 p-3  bg-gray-600'>
+        <div className='flex gap-5   text-white  '>
        <div className='flex gap-1'>
         <h1 className='font-bold'>Phone:</h1>
        <h1 className='text-[#1de9b6] font-light'> +1 234 5678</h1>

@@ -11,7 +11,7 @@ const Layout = () => {
     <div>
     
       <img
-        className="fixed w-full h-full md:object-cover object-cover opacity-90 -z-50 top-0 buttom-0"
+        className="fixed w-full h-full md:object-cover object-cover opacity-90 -z-50 top-0 right-0 left-0 "
         src={backgroundImage}
         alt="Laptop background"
       />

@@ -50,8 +50,8 @@ const servicedetail = [
 
 const OurService = () => {
   return (
-    <div className="bg-white w-full h-screen py-16 px-8 border-b-1 border-gray-300 ">
-      <div className="text-center mb-12">
+    <div className="bg-white w-full h-screen py-8 px-8 border-b-1 border-gray-300 ">
+      <div className="text-center mb-24">
         <h2 className="text-5xl font-medium tracking-wide font-poppins mb-2">Our Services</h2>
       </div>
 
@@ -61,7 +61,7 @@ const OurService = () => {
 
            <div className="flex gap-4">
 
-            <div className=" text-teal-400 text-5xl  py-3">
+            <div className=" text-teal-500 text-2xl bg-teal-200 h-fit w-fit rounded-full p-2">
               {val.logo}
             </div>
           <div className="flex  items-start gap-4 flex-col text-gray-600 font-poppins">

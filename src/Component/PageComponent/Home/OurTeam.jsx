@@ -19,15 +19,15 @@ const teamdetails=[
 
 const OurTeam = () => {
   return (
-    <div className='h-lvh w-full bg-white  '>
+    <div className='h-full w-full bg-white py-24 '>
       <div className='flex flex-col gap-8 justify-center items-center  w-9/10 h-full mx-auto'>
         <h1 className='text-5xl font-poppins'>Our Team</h1>
         
-        <div className='flex gap-8'>
+        <div className='flex gap-8 '>
           {teamdetails.map((val,i)=>{
             return(
               <div key={i}>
-                <div className='flex flex-col justify-center items-center gap-5 '>
+                <div className='flex flex-col justify-center items-center gap-5 shadow-sm p-5 '>
                 <div className='mb-8'> <img className='w-48 h-48 rounded-full' src={val.image} alt="" /></div> 
                 <div className='text-sm text-gray-800'>{val.name}</div>
                 <div className='text-sm uppercase text-gray-400 font-extralight'>{val.position}</div>

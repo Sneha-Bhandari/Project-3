@@ -53,7 +53,7 @@ const Schemas = yup.object().shape({
 const ContactUs = () => {
   return (
     <div className='bg-gray-50  h-full w-full'>
-      <div className='flex flex-col gap-8 mx-auto items-center justify-center py-20 h-full w-full  bg-gray-100 '>
+      <div className='flex flex-col gap-4 mx-auto items-center justify-center py-20 h-full w-full  bg-gray-100 '>
        <h1 className='text-5xl font-poppins mb-12' >Contact Us</h1>
         <div className='w-full h-full  flex justify-center items-start mx-auto   gap-12 px-20'>
           <div className=' w-9/12 h-fit flex flex-col p-8 gap-4  bg-white'>
@@ -74,8 +74,8 @@ const ContactUs = () => {
         >
          {({setFieldValue,values})=>{
           return(
-            <Form className="   gap-4 p-2 flex  flex-col ">
-            
+            <Form className="   gap-1 p-2 flex  flex-col ">
+            <div className='grid grid-cols-2 gap-4'>
             {Forms.map((val, i) => {
               return (
                 <div key={i} className="flex flex-col font-poppins text-base font-light gap-1  ">
@@ -84,7 +84,7 @@ const ContactUs = () => {
 
                   as={val.type === "textarea" ? "textarea" : "input"}
                   className={`w-full border border-gray-300 rounded-3xl p-2 focus:outline-none focus:ring-2 focus:ring-teal-300 ${
-                    val.type === "textarea" ? "min-h-[150px]" : "" 
+                    val.type === "textarea" ? "w-full resize-none " : "" 
                   }`  
                  }
                     name={val.name}
@@ -99,6 +99,7 @@ const ContactUs = () => {
                 </div>
               );
             })}
+            </div>
             <div className="flex items-center  mx-2 my-2">
               <button
                 className="text-white uppercase  bg-teal-300 font-light text-xs rounded-3xl p-4 cursor-pointer"

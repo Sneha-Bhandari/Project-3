@@ -16,9 +16,9 @@ const details = [
 
 const OurWorks = () => {
   return (
-    <div className="bg-white  w-full h-full">
+    <div className="bg-gray-100  w-full h-full py-6">
       <div className="flex flex-col gap-10 justify-center items-center py-6">
-        <h1 className="text-5xl tracking-wider font-serif">Our Works</h1>
+        <h1 className="text-5xl tracking-wider font-poppins">Our Works</h1>
         <p className="w-1/2 text-center font-sans text-gray-700 font-light tracking-wide">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
           itaque neque, delectus odio iure explicabo.
@@ -37,7 +37,7 @@ const OurWorks = () => {
               className="w-full h-96 object-cover transform transition-transform duration-700 group-hover:scale-125"
             />
             
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-all duration-900 ease-in-out transform translate-y-4 group-hover:translate-y-0">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-all bg-black/60 duration-900 ease-in-out transform translate-y-4 group-hover:translate-y-0">
               <div className="text-2xl font-semibold">{details[i]?.title}</div>
               <div className="text-sm mt-1 tracking-widest uppercase">
                 {details[i]?.type}

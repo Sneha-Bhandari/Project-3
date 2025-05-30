@@ -46,12 +46,12 @@ const responsive = {
 
 const Testimonials = () => {
   return (
-    <div className="h-lvh w-full  bg-white mx-auto ">
-      <div className="flex flex-col items-center  h-fit justify-center ">
+    <div className="h-full w-full flex items-center justify-center mx-auto py-16 bg-gray-100 ">
+      <div className="flex flex-col items-center gap-8 h-full justify-start ">
       <div className="font-poppins text-5xl">Testimonials</div>
      
       <Carousel
-        className=" flex w-2/4 h-fit"
+        className=" flex w-1/2 h-fit"
         arrows={false}
         autoPlaySpeed={3000}
         infinite
@@ -65,8 +65,8 @@ const Testimonials = () => {
         responsive={responsive} 
       >
         {testimonials.map((t, index) => (
-          <div key={index} className=" h-fit py-8 ">
-            <p className="italic text-gray-700 mb-4 text-2xl font-light tracking-wide  text-justify w-full">“{t.quote}”</p>
+          <div key={index} className=" h-fit py-4 ">
+            <p className="italic text-gray-700  text-2xl font-light tracking-wide  text-center w-full">“{t.quote}”</p>
             <div className="flex items-center justify-center gap-4 py-12 ">
               <img
                 src={t.image}

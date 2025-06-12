@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
 
         <div className="mt-6">
-          <button className="rounded-full px-7 py-4 bg-[#1de9b6] hover:bg-[#1cd2a5] transition">
+          <button className=" cursor-pointer rounded-full px-7 py-4 bg-teal-500 hover:bg-teal-600 transition">
             <a
               href="https://www.facebook.com"
               target="_blank"
